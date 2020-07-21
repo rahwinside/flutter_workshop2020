@@ -74,7 +74,7 @@ class BioData extends StatelessWidget {
                   children: [
                     Flexible(
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 10, bottom: 20),
+                        padding: const EdgeInsets.only(left: 8.0, top: 10, bottom: 20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
@@ -100,7 +100,36 @@ class BioData extends StatelessWidget {
                         ),
                       )
                     ),
-                    Flexible(child: Column()),
+                    Padding(
+                      padding: EdgeInsets.only(left: 5, right: 5),
+                    ),
+                    Flexible(child: Padding(
+                      padding: const EdgeInsets.only(right: 8.0, top: 10, bottom: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              Container(
+                                padding: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    end: Alignment.bottomLeft, 
+                                    begin: Alignment.topRight, 
+                                    colors: [Color(0xff622774), Color(0xffc53364)]),
+                                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                                ),
+                                child: Text(
+                                  "Hello World!",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 30
+                                  ),
+                                ),
+                              ),
+                            ],
+                        ),
+                    )
+                    ),
                   ],
                 ),
               ),
