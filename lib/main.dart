@@ -107,26 +107,26 @@ class BioData extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 8.0, top: 10, bottom: 20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              Container(
-                                padding: EdgeInsets.all(10),
-                                height: 200,
-                                decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                    end: Alignment.bottomLeft, 
-                                    begin: Alignment.topRight, 
-                                    colors: [Color(0xff622774), Color(0xffc53364)]),
-                                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                                ),
-                                child: Text(
-                                  "Hello World!",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 30
-                                  ),
-                                ),
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            height: 200,
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                end: Alignment.bottomLeft, 
+                                begin: Alignment.topRight, 
+                                colors: [Color(0xff622774), Color(0xffc53364)]),
+                              borderRadius: BorderRadius.all(Radius.circular(15)),
+                            ),
+                            child: Text(
+                              "Hello World!",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 30
                               ),
-                            ],
+                            ),
+                          ),
+                        ],
                         ),
                     )
                     ),
