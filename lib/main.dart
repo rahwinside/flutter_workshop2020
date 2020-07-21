@@ -27,7 +27,7 @@ class BioData extends StatelessWidget {
                     image: AssetImage("images/profile.jpeg"),
                     alignment: Alignment.topCenter,
                     colorFilter: new ColorFilter.mode(
-                        Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                        Colors.black.withOpacity(0.5), BlendMode.dstATop),
                     fit: BoxFit.fitHeight,
                   ),
                   color: Colors.black45,
