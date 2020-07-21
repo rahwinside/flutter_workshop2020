@@ -14,29 +14,23 @@ class BioData extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Container(
+                height: 450,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(20), 
-                    bottomRight: Radius.circular(20)
-                  ),
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10), bottomRight: Radius.circular(10)),
                   image: DecorationImage(
-                    image: AssetImage(
-                      "images/profile.jpeg",
-                    ),
-                    fit: BoxFit.fitWidth,
+                    image: AssetImage("images/profile.jpeg"),
                     alignment: Alignment.topCenter,
-                    colorFilter: ColorFilter.mode(Colors.black38.withOpacity(0.5),
-                    BlendMode.dstATop)
+                    colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
+                    fit: BoxFit.fitHeight,
                   ),
+                  color: Colors.black45,
                 ),
-                padding: EdgeInsets.all(10),
-                height: 400,
+                padding: EdgeInsets.only(bottom: 10, top: 20, left: 20, right: 20),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Text(
                       "Bibian's",
@@ -78,8 +72,35 @@ class BioData extends StatelessWidget {
               Container(
                 child: Row(
                   children: [
-                    Column(),
-                    Column(),
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 8.0, right: 8.0, top: 10, bottom: 20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.all(10),
+                              height: 200,
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  end: Alignment.bottomLeft, 
+                                  begin: Alignment.topRight, 
+                                  colors: [Color(0xff622774), Color(0xffc53364)]),
+                                borderRadius: BorderRadius.all(Radius.circular(15)),
+                              ),
+                              child: Text(
+                                "Hello World!",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 30
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ),
+                    Flexible(child: Column()),
                   ],
                 ),
               ),
