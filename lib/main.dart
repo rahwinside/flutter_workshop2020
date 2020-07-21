@@ -50,7 +50,7 @@ class BioData extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "Kulla Review",
+                      "FatFox Cuts",
                       textAlign: TextAlign.start,
                       style: TextStyle(
                         fontSize: 70,
@@ -71,29 +71,81 @@ class BioData extends StatelessWidget {
               ),
               Container(
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Flexible(
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 8.0, top: 10, bottom: 20),
+                        padding: EdgeInsets.only(left: 8.0, top: 10, bottom: 20),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  end: Alignment.bottomLeft, 
-                                  begin: Alignment.topRight, 
-                                  colors: [Color(0xff622774), Color(0xffc53364)]),
-                                borderRadius: BorderRadius.all(Radius.circular(15)),
-                              ),
-                              child: Text(
-                                "Hello World!",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 30
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: Container(
+                                padding: EdgeInsets.all(15),
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    end: Alignment.bottomLeft, 
+                                    begin: Alignment.topRight, 
+                                    colors: [Color(0xff622774), Color(0xffc53364)]),
+                                  borderRadius: BorderRadius.all(Radius.circular(15)),
                                 ),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Smuggler Short Film Roast | Kulla Review",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: "Roboto",
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 20
+                                      ),
+                                    ),
+                                    Padding(padding: EdgeInsets.only(bottom: 10)),
+                                    Text(
+                                      "Tamil Short Film | Troll Video",
+                                      style: TextStyle(
+                                        color: Colors.white70,
+                                        fontSize: 15
+                                      ),
+                                    ),
+                                  ],
+                                )
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: Container(
+                                padding: EdgeInsets.all(15),
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    end: Alignment.bottomLeft, 
+                                    begin: Alignment.topRight, 
+                                    colors: [Color(0xff622774), Color(0xffc53364)]),
+                                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      "Smuggler Short Film Roast | Kulla Review",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontFamily: "Roboto",
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 20
+                                      ),
+                                    ),
+                                    Padding(padding: EdgeInsets.only(bottom: 10)),
+                                    Text(
+                                      "Tamil Short Film | Troll Video",
+                                      style: TextStyle(
+                                        color: Colors.white70,
+                                        fontSize: 15
+                                      ),
+                                    ),
+                                  ],
+                                )
                               ),
                             ),
                           ],
