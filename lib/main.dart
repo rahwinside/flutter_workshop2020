@@ -35,12 +35,14 @@ class BioData extends StatelessWidget {
                 padding:
                     EdgeInsets.only(bottom: 10, top: 20, left: 20, right: 20),
                 child: Column(
+                  mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Text(
                       "Bibian's",
                       textAlign: TextAlign.start,
                       style: TextStyle(
+                          height: 1,
                           fontSize: 100,
                           color: Color(0xffffc63a),
                           fontFamily: "BillionDreams",
@@ -50,12 +52,14 @@ class BioData extends StatelessWidget {
                                 color: Colors.black45,
                                 offset: Offset(1, 1),
                                 blurRadius: 10)
-                          ]),
+                          ]
+                        ),
                     ),
                     Text(
                       "FatFox Cuts",
                       textAlign: TextAlign.start,
                       style: TextStyle(
+                          height: 1,
                           fontSize: 70,
                           color: Colors.white,
                           fontFamily: "BebasNeue",
@@ -71,7 +75,8 @@ class BioData extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 10),
+                padding:
+                    EdgeInsets.only(top: 20, left: 10, right: 10, bottom: 10),
                 child: Text(
                   "Trending Now",
                   style: TextStyle(
@@ -97,7 +102,8 @@ class BioData extends StatelessWidget {
                             child: InkWell(
                               // splashColor: Colors.deepPurpleAccent,
                               onTap: () {
-                                launch("https://www.youtube.com/watch?v=IGbrHjqI6a4");
+                                launch(
+                                    "https://www.youtube.com/watch?v=IGbrHjqI6a4");
                               },
                               child: Container(
                                   padding: EdgeInsets.all(15),
@@ -139,7 +145,8 @@ class BioData extends StatelessWidget {
                             child: InkWell(
                               // splashColor: Colors.deepPurpleAccent,
                               onTap: () {
-                                launch("https://www.youtube.com/watch?v=U4crSTtsC7I");
+                                launch(
+                                    "https://www.youtube.com/watch?v=U4crSTtsC7I");
                               },
                               child: Container(
                                   padding: EdgeInsets.all(15),
@@ -181,7 +188,8 @@ class BioData extends StatelessWidget {
                             child: InkWell(
                               // splashColor: Colors.deepPurpleAccent,
                               onTap: () {
-                                launch("https://www.youtube.com/watch?v=fB0wdg-JzW8");
+                                launch(
+                                    "https://www.youtube.com/watch?v=fB0wdg-JzW8");
                               },
                               child: Container(
                                   padding: EdgeInsets.all(15),
@@ -223,7 +231,8 @@ class BioData extends StatelessWidget {
                             child: InkWell(
                               // splashColor: Colors.deepPurpleAccent,
                               onTap: () {
-                                launch("https://www.youtube.com/watch?v=zTtF1dZUNEw");
+                                launch(
+                                    "https://www.youtube.com/watch?v=zTtF1dZUNEw");
                               },
                               child: Container(
                                   padding: EdgeInsets.all(15),
@@ -278,7 +287,8 @@ class BioData extends StatelessWidget {
                             child: InkWell(
                               // splashColor: Colors.deepPurpleAccent,
                               onTap: () {
-                                launch("https://www.youtube.com/watch?v=WR04EjI4bsM");
+                                launch(
+                                    "https://www.youtube.com/watch?v=WR04EjI4bsM");
                               },
                               child: Container(
                                   padding: EdgeInsets.all(15),
@@ -320,7 +330,8 @@ class BioData extends StatelessWidget {
                             child: InkWell(
                               // splashColor: Colors.deepPurpleAccent,
                               onTap: () {
-                                launch("https://www.youtube.com/watch?v=TvwkQhpxN4g");
+                                launch(
+                                    "https://www.youtube.com/watch?v=TvwkQhpxN4g");
                               },
                               child: Container(
                                   padding: EdgeInsets.all(15),
@@ -362,7 +373,8 @@ class BioData extends StatelessWidget {
                             child: InkWell(
                               // splashColor: Colors.deepPurpleAccent,
                               onTap: () {
-                                launch("https://www.youtube.com/watch?v=SVG2txWANDs");
+                                launch(
+                                    "https://www.youtube.com/watch?v=SVG2txWANDs");
                               },
                               child: Container(
                                   padding: EdgeInsets.all(15),
