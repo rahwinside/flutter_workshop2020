@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'contact_details.dart';
+
 void main() {
-  runApp(BioData());
+  runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: BioData()));
 }
 
 class BioData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         backgroundColor: Color(0xff151515),
         body: SingleChildScrollView(
           child: Column(
@@ -52,8 +54,7 @@ class BioData extends StatelessWidget {
                                 color: Colors.black45,
                                 offset: Offset(1, 1),
                                 blurRadius: 10)
-                          ]
-                        ),
+                          ]),
                     ),
                     Text(
                       "FatFox Cuts",
@@ -411,6 +412,48 @@ class BioData extends StatelessWidget {
                                   )),
                             ),
                           ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: InkWell(
+                              // splashColor: Colors.deepPurpleAccent,
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            ContactMe()));
+                              },
+                              child: Container(
+                                  padding: EdgeInsets.all(15),
+                                  decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                        end: Alignment.bottomLeft,
+                                        begin: Alignment.topRight,
+                                        colors: [
+                                          Color(0xff06beb6),
+                                          Color(0xff48b1bf)
+                                        ]),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(15)),
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.call),
+                                      Padding(
+                                        padding: EdgeInsets.only(right: 10),
+                                      ),
+                                      Text(
+                                        "Contact me!",
+                                        style: TextStyle(
+                                            color: Colors.white,
+                                            fontFamily: "Roboto",
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 20),
+                                      ),
+                                    ],
+                                  )),
+                            ),
+                          ),
                         ],
                       ),
                     )),
@@ -420,7 +463,6 @@ class BioData extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }
