@@ -417,11 +417,7 @@ class BioData extends StatelessWidget {
                             child: InkWell(
                               // splashColor: Colors.deepPurpleAccent,
                               onTap: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (BuildContext context) =>
-                                            ContactMe()));
+                                launch("tel:+919876543210");
                               },
                               child: Container(
                                   padding: EdgeInsets.all(15),
